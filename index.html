@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <h2>CATCH THE CREATURE</h2>
+        <button>PLAY</button>
+    </div>
+    <div class="screen">
+        <h2>SELECT  PLAYER</h2>
+        <div id="player">
+       <div class="elem">
+        <h4>ICEMAN</h4>
+        <img src="images__1_-removebg-preview.png" alt="">
+       </div>
+       <div class="elem">
+        <h4>PIKACHU</h4>
+        <img src="image-removebg-preview.png" alt="">
+       </div>
+       <div class="elem">
+        <h4>PACMAN</h4>
+        <img src="images-removebg-preview (1).png" alt="">
+       </div>
+    </div>
+    </div>
+    <div class="screen">
+        <h5 class="gameover">GAME OVER</h5>
+        <div id="info">
+      <h2 class="Time">Time : <span>00:00</span></h2>
+      <h2 class="score">Score : <span>0</span></h2>
+      </div>
+      <div class="playground">
+       
+      </div>
+    </div>
+    <div class="screen">
+        <h1 id="result"></h1>
+        <h1>WELL PLAYED</h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+timeSpan.innerHTML=`Time : <span>00</span>: <span>${sec}</span>`;

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family:Rowdies;
+    font-weight: 400;
+   
+}
+
+body{
+    overflow: hidden;
+}
+
+.screen{
+    height: 100%;
+    width: 100%;
+    background-color: #461959;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+
+}
+
+.screen h2{
+    color: #CD6688 ;
+    font-size: 70px;
+}
+
+button{
+    color: #4b0158 ;
+    background-color: #CD6688;
+    border: 2px solid #001B79;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 25px;
+    cursor: grab;
+}
+
+ button:active{
+    scale: 0.6;
+     transition: all ease-out 0.8s; 
+ }
+    
+#player{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+    
+}
+
+
+.elem {
+    padding: 10px;
+    border: 2px solid rgb(228, 96, 243);
+    cursor: grab;
+   color: #CD6688;
+   display: flex;
+   align-items:center ;
+   justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+   font-size: 30px;
+
+}
+
+.elem img{
+    height: 140px;
+
+}
+
+.elem:hover{
+    background-color: beige;
+    transition: all ease-in 0.4s;
+}
+
+
+
+#info{
+    width: 100%;
+    position: absolute;
+    border-bottom: 2px solid  beige ;
+    top: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;   
+    
+}
+
+.playground{
+    height: 90%;
+    width: 100%;
+    position: relative;
+}
+.playground img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    
+ }  
+
+ .screen h5{
+    position: absolute;
+    background-color: beige;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 7vh;
+    width: 100%;
+    padding: 10px;
+    display: none;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    z-index: 99;
+ }
+
+ .screen h1{
+    color: #f588ad ;
+    font-size: 65px;
+}
